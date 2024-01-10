@@ -10,7 +10,7 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }));
 
-//connect your database here
+//connect your database here(url-sample connection)
 // mongoose.connect("url")
 
 app.get('/',(req, res)=>{
