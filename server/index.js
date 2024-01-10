@@ -19,6 +19,7 @@ app.get('/',(req, res)=>{
     .catch(err=>console.log(err))
 })
 
+
 app.get('/user/:id',(req, res)=>{
     const id=req.params.id
     userModel.findById({_id:id})
@@ -30,7 +31,7 @@ app.post("/create",(req, res)=>{
     userModel.create(req.body)
     .then(users=>res.json(users))
     .catch(err=>res.json(err))
-    
+
 })
 
 app.put('/update/:id',(req, res)=>{
