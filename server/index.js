@@ -11,7 +11,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }));
 
 //connect your database here(url-sample connection)
-// mongoose.connect("url")
+// mongoose.connect("your connection url")
 
 app.get('/',(req, res)=>{
     userModel.find({})
